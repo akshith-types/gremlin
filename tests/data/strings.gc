@@ -1,0 +1,22 @@
+// strings: literals, concatenation, len(), character indexing, comparison
+string word = "gremlin";
+int n = len(word);
+string rev = "";
+int i = n - 1;
+while (i >= 0) {
+    rev = rev + word[i];
+    i = i - 1;
+}
+int pal = 1;
+int k = 0;
+while (k < n / 2) {
+    if (word[k] != word[n - 1 - k]) {
+        pal = 0;
+    }
+    k = k + 1;
+}
+string greet = "hello, " + word;
+string tag = greet + "!";
+print rev;
+print pal;
+print tag;

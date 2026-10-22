@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.pytest_cache/
+
+# local config and generated run output (regenerate with driver.py)
+.env
+out/
+out_*/
+demo/
+
+# OS / tool folders
+.DS_Store
+Claude outputs/
+
+# NOTE: src/gen/ (the ANTLR-generated parser) IS committed on purpose,
+# so the project runs after a clone without Java. Regenerate with: bash setup.sh

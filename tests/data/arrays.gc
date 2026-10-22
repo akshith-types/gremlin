@@ -1,0 +1,25 @@
+// int arrays: initializer list, indexing, in-place reverse, running max
+int a[6] = {4, 8, 15, 16, 23, 42};
+int first = a[0];
+int n = len(a);
+int i = 0;
+int j = n - 1;
+int tmp = 0;
+while (i < j) {
+    tmp = a[i];
+    a[i] = a[j];
+    a[j] = tmp;
+    i = i + 1;
+    j = j - 1;
+}
+int best = a[0];
+int k = 1;
+while (k < n) {
+    if (a[k] > best) {
+        best = a[k];
+    }
+    k = k + 1;
+}
+print first;
+print a;
+print best;

@@ -1,0 +1,9 @@
+// loop boundary: '>' vs '>=' decides how many times the body runs
+int i = 5;
+int total = 0;
+while (i > 0) {
+    total = total + i;
+    i = i - 1;
+}
+print total;
+print i;

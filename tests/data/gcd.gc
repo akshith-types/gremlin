@@ -1,0 +1,10 @@
+// Euclid's algorithm: '%' is not commutative, a prime M5 target
+int a = 252;
+int b = 105;
+int t = 0;
+while (b != 0) {
+    t = b;
+    b = a % b;
+    a = t;
+}
+print a;

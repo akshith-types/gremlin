@@ -1,0 +1,7 @@
+// GREMLIN sample: (a/2)*2 is NOT equal to a -> unsound algebra candidate
+int a = 7;
+int q = a / 2;
+int r = q * 2;
+int c = a + r;
+print c;
+print r;

@@ -1,0 +1,14 @@
+// digit sum of 98765 and a rounded-down value: algebra + loop
+int n = 98765;
+int s = 0;
+int d = 0;
+int m = n;
+while (m > 0) {
+    d = m % 10;
+    s = s + d;
+    m = m / 10;
+}
+int block = 64;
+int aligned = (n / block) * block;
+print s;
+print aligned;

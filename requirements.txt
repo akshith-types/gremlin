@@ -1,0 +1,4 @@
+antlr4-python3-runtime==4.13.1
+python-dotenv==1.0.0
+mypy==1.10.0
+pytest==8.2.2

@@ -1,0 +1,4 @@
+int x = 3;
+string s = "x is ";
+string bad = s + x;
+print bad;
